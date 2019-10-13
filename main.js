@@ -1,4 +1,4 @@
-alert('HEY')
-console.log('HEY')
-alert('new')
-console.log('end')
+alert('HEY');
+console.log('HEY');
+alert('new');
+console.log('end');
