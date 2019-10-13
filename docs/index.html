@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>- Crear un repositorio con las ramas de master y develop.</p>
+<p>Mediante el comando git flow init se genera la estructura de git flow sobre nuestro proyecto</p>
+<img src="1.png">
+<p>- (2 puntos) Generar diferentes features con pequeños cambios en el proyecto. Algunas
+de las features deben modificar un mismo fichero.</p>
+
+<p>Usando los diferentes comandos de git flow podemos trabajar comodamente con la features.</p>
+<p>Para crear una nueva feature deberemos usar git flow feature start nombre</p>
+<img src="2.png">
+Cuando la feature este terminada usaremos el comando git flow feature finish nombre</p>
+<img src="3.png">
+
+<p>Tambien podemos publicar la feature en caso de que no este terminada y queramos que nuestros compañeros puedan acceder a ella. Para esto usaremos el comando </p>
+git flow feature publish nombre</p>
+<img src="4.png">
+
+<p>En este caso se han creado 2 features diferentes que modifican el mismo fichero</p>
+<img src="5.png">
+<p>Este es el contenido de style.css en newStyleIndex</p>
+<img src="6.png"><br/>
+<img src="7.png">
+
+<p>Este es el contenido de style.css en newStyleShop</p>
+<img src="8.png">
+
+<p>Ahora vamos a finalizar las 2 features</p>
+
+<img src="9.png">
+
+<p>Como se puede observar hay un conflicto por haber modificado el mismo fichero asi que se debe corregir manualmente</p>
+
+<img src="10.png"><br/>
+<img src="11.png">
+
+<p>Realizamos el commit </p>
+
+<img src="12.png">
+
+<p>Y finalmente podemos terminar la feature</p>
+
+<img src="13.png">
+
+<p>- (1 punto) Crear una nueva release con todas las features creadas.</p>
+<p>Para crear una release debemos usar el comando git flow release start nombre</p>
+
+<img src="14.png">
+<p>- (1 punto) Simular que se ha detectado un error en la release y solucionarlo.Si hay algun error en la release se debe modificar en la misma release</p>
+
+<img src="15.png">
+<p>- (2 punto) Publicar la release en producción y esta debe quedar etiquetada.</p>
+<p>Finalizaremos la release con git flow release finish nombre</p>
+
+<img src="16.png">
+<p>En el proceso se pedira el commit para el merge con develop por el commit del arreglo y la descripción de la tag que se va a crear.</p>
+<p>Finalmente subimos los cambios de master al repositorio en remoto y ademas subimos las tags con gut push --tags</p>
+
+<img src="17.png">
+<p>- (1 punto) Simular la existencia de un error en producción y solucionarlo por medio de
+un hotfix.</p>
+<p>Vamos a corregir un error en el diseño de la web usando el comando </p>
+<p>git flow hotfix start nombre</p>
+
+<img src="18.png">
+
+<p>Cuando tengamos el cambio arreglado realizamos el commit y finalizamos el hotfix con el comando git flow hotfix finish nombre. En el proceso se creara una tag asi que al momento de subirla a remoto tambien habra que realizar el git push --tags</p>
+
+<img src="19.png">
+<img src="10.png">
+<p>- (3 puntos) Documentar el proceso completo en Github Pages o Gitlab Pages.</p>
+
+</body>
+</html>
